@@ -9,6 +9,7 @@ Pytorch: 1.0.1
 OSX : 10.1 NCRF++
 
 1) Preprocess CDR data
+
 echo " prepare datasets:  test.txt "
 python prepare.py 
  
@@ -28,11 +29,13 @@ python main.py --config demo.decode.config
  
  4) Generate result
 generate result via "assemble.py"
+
 echo "process rawout  to get result.txt"
 python  reassemble.py
 
  
 5) Evaluation
 Evaluated via bc5cdr_eval.jar
+
 echo " evaluate the result" 
 ./eval_mention.sh PubTator CDR_TestSet.PubTator.txt result.txt
