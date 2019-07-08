@@ -19,10 +19,8 @@ Output module file: "lstmcrf.6.model"
 echo "start training.. to get model "
 python main.py --config demo.train.config
 
- 
- 2) Train Module in NCRF++
-Configed NCRF++ to train without GPU, Configure file: "dh.train.config"
-Output module file: "lstmcrf.6.model"
+3) Decode data in NCRF++
+Configed NCRF++ to train without GPU, Configure file: "dh.decode.config" Output file: "raw.out"
 
 echo "start decode... to  get rawout "
 python main.py --config demo.decode.config
